@@ -10,7 +10,9 @@ Code changed:
 - Line: 413:
 	String cpclConfigLabel = "! 0 200 200 406 1\r\n" + "ON-FEED IGNORE\r\n" + "BOX 20 20 380 380 8\r\n"
             + "T 0 6 137 177 TEST\r\n" + "PRINT\r\n";
+
 	// configLabel = cpclConfigLabel.getBytes();
+
         configLabel = printLabel.getBytes();
 
 
