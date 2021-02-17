@@ -5,15 +5,8 @@ Why?
 It cannot print the with CPCL language, It's returning a hardcode label with a box and TEST label inside.
 I've removed these hardcodes and make it able to print both ZPL and CPCL languages. It works fine with the my printer version Zebra EZ320
 
-Code changed:
-- File: RNZebraBluetoothPrinterModule.java
-- Line: 413:
-	String cpclConfigLabel = "! 0 200 200 406 1\r\n" + "ON-FEED IGNORE\r\n" + "BOX 20 20 380 380 8\r\n"
-            + "T 0 6 137 177 TEST\r\n" + "PRINT\r\n";
-
-	// configLabel = cpclConfigLabel.getBytes();
-
-        configLabel = printLabel.getBytes();
+# SET THIS PROJECT AS PUBLIC
+So when we fetch the GRG project this package can be installed
 
 
 # react-native-zebra-bluetooth-printer
